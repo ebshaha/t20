@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gerenciador de Monstros</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #monster-list {
+            margin-bottom: 20px;
+        }
+
+        .monster-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .monster-card h2 {
+            margin-top: 0;
+        }
+
+        .monster-card input {
+            margin-bottom: 5px;
+        }
+
+        .monster-card button {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="img/tituloBG.png" alt="Imagem">
+        <p class="image-text" id="firstTitle">CRIATURAS</p>
+    </div>
+
+    <table>
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="iniciativa.html">Iniciativas</a></td>
+            <td><a href="tesouro.html">Tesouros</a></td>
+            <td><a href="npc.html">NPC's</a></td>
+        </tr>
+        <tr>
+            <td><a href="criatura.html">Criatura</a></td>
+            <td><a href="missoes.html">Missões</a></td>
+            <td><a href="configuracoes.html">Configurações</a></td>
+            <td><a href="contato.html">Contato</a></td>
+        </tr>
+    </table>
+    
+    <section class="textBox">
+        <h1>Gerenciador de Monstros</h1>
+    
+        <div id="monster-list"></div>
+        <div id="create-monster">
+            <h2>Novo Monstro</h2>
+            <input type="text" id="monster-name" placeholder="Nome do Monstro" />
+            <input type="number" id="monster-hp" placeholder="Pontos de Vida" />
+            <input type="number" id="monster-mana" placeholder="Pontos de Mana" />
+            <input type="number" id="monster-iniciativa" placeholder="Modificador de Iniciativa"/>
+            <button id="btnGerarMonstro">Adicionar Monstro</button>
+        </div>
+    </section>
+
+    <footer>
+        <button id="backToTop" onclick="scrollToTop()">↑</button>
+    </footer>
+
+    <script type="module" src="js/criatura.js"></script>
+    <script src="chageBG.js"></script>
+</body>
+
+</html>

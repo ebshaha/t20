@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Mestre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="img/tituloBG.png" alt="Imagem">
+        <p class="image-text" id="firstTitle">NPC'S</p>
+    </div>
+
+    <table>
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="iniciativa.html">Iniciativas</a></td>
+            <td><a href="tesouro.html">Tesouros</a></td>
+            <td><a href="npc.html">NPC's</a></td>
+        </tr>
+        <tr>
+            <td><a href="criatura.html">Criatura</a></td>
+            <td><a href="missoes.html">Missões</a></td>
+            <td><a href="configuracoes.html">Configurações</a></td>
+            <td><a href="contato.html">Contato</a></td>
+        </tr>
+    </table>
+
+    <section class="textBox">
+        <p>Os seus players interagiram com alguem que voce não esperava que eles interagissem? Crie um NPC aleatorio com
+            este gerador de NPC's!</p>
+        <label for="raca">Raça:</label>
+        <select name="raca" id="raca">
+            <option value="16">Qualquer</option>
+            <option value="1">Humano</option>
+            <option value="2">Anão</option>
+            <option value="3">Dahllan</option>
+            <option value="4">Elfo</option>
+            <option value="5">Goblin</option>
+            <option value="6">Lefou</option>
+            <option value="7">Minotauro</option>
+            <option value="8">Qareen</option>
+            <option value="0">Hynne</option>
+            <option value="10">Golem</option>
+            <option value="0">Kliren</option>
+            <option value="0">Medusa</option>
+            <option value="0">Osteon</option>
+            <option value="14">Sereia</option>
+            <option value="15">Silfide</option>
+            <option value="0">Suraggel</option>
+            <option value="5">Trog</option>
+        </select>
+        <button onclick="gerarNome()">Gerar</button>
+        <p id="nomeGerado"></p>
+        <p>Por conta da aleatoriedade, talvez algumas respostas não sejam coerentes, como uma elfa de Doherimm que eh
+            atraente e feia. Para casos como esses, refaça ou ignore o que não for coerente</p>
+    </section>
+
+    <footer>
+        <button id="backToTop" onclick="scrollToTop()">↑</button>
+    </footer>
+    <script src="chageBG.js"></script>
+    <script src="npc.js"></script>
+</body>
+
+</html>
